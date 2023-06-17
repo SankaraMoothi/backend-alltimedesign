@@ -22,9 +22,9 @@ const connect = async () => {
     console.log(error);
   }
 };
-app.use("/api/auth", authRoute);
+app.use("/auth", authRoute);
 
-app.use("/api/task", taskRoute);
+app.use("/task", taskRoute);
 app.get("/", function (request, response) {
   response.send("🙋‍♂️, 🌏 🎊✨🤩!!!!!");
 });
